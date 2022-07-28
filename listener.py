@@ -52,22 +52,22 @@ if take == 1:
     print("5:ALL")
     type_of_packet=int(input())
     if type_of_packet==1:
-        print("Press ctrl+c to end sniffing and look at results)
+        print("Press ctrl+c to end sniffing and look at results")
         a=sniff(filter=TCP,iface='eth0', count=no_of_packets)
         a.summary()
     elif type_of_packet==2:
-        print("Press ctrl+c to end sniffing and look at results)
+        print("Press ctrl+c to end sniffing and look at results")
         a=sniff(filter="arp",iface='eth0',count=no_of_packets)
         a.summary()
     elif type_of_packet==3:
-        print("Press ctrl+c to end sniffing and look at results)
+        print("Press ctrl+c to end sniffing and look at results")
         a=sniff(filter=HTTPRequest,iface='eth0',count=no_of_packets)
         a.summary()
     elif type_of_packet==4:
-        print("Press ctrl+c to end sniffing and look at results)
+        print("Press ctrl+c to end sniffing and look at results")
         a=sniff(filter="icmp",iface='eth0',count=no_of_packets)
     elif type_of_packet==5:
-        print("Press ctrl+c to end sniffing and look at results)
+        print("Press ctrl+c to end sniffing and look at results")
         a=sniff(iface='eth0',count=no_of_packets)
         a.summary()
 
