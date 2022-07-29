@@ -53,7 +53,7 @@ if take == 1:
     type_of_packet=int(input())
     if type_of_packet==1:
         print("Press ctrl+c to end sniffing and look at results")
-        a=sniff(filter=TCP,iface='eth0', count=no_of_packets)
+        a=sniff(filter="tcp",iface='eth0', count=no_of_packets)
         a.summary()
     elif type_of_packet==2:
         print("Press ctrl+c to end sniffing and look at results")
